@@ -6,7 +6,7 @@ def limpiar_pantalla():
         system('clear')
 #from curso import Curso
 #from empleado import Empleado
-from video import Video
+#from video import Video
 #from tema import Tema
 from curso_tema import Curso_Tema
 from curso_tema_video import Curso_Tema_Video
@@ -25,8 +25,7 @@ while True:
 #           valor=Empleado(None,None,None)
 #           valor.Minimenu()
         elif opcion==3:
-            pass
-            valor=Video(idVideo,nombre,url,fechapublicacion)
+            valor=Video(0,0,0,0)
             valor.Minimenu()
         elif opcion==4:
             pass
