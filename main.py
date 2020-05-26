@@ -32,12 +32,11 @@ while True:
         valor.Minimenu()
     elif opcion==3:
         pass
+        #valor=Tema(None,None,None)
+        #valor.Minimenu()
+    elif opcion==4:
         valor=Video(0,0,0,0)
         valor.Minimenu()
-    elif opcion==4:
-        pass
-#           valor=Tema(None,None,None)
-#           valor.Minimenu()
     elif opcion==5:
         valor=Curso_Tema(0,0,0)
         valor.Minimenu()

@@ -30,7 +30,7 @@ class Video:
     def fechap(self,valor):
         self.__fechap=valor
     def __eq__ (self,otro):
-        return self.__idVideo==otro.__idVideo
+        return self.__idV==otro.__idV
     def Minimenu(self):
         limpiar_pantalla()
         lista=[]
@@ -42,8 +42,8 @@ class Video:
                     input("Hay un error, introduzca numero correcto, enter para continuar...")
                 elif opcion==1:
                     limpiar_pantalla()
-                    self.__idVideo=self.__idVideo+1
-                    self.__nombre= input("Que nombre tendra el video: ")
+                    self.__idV=self.__idV+1
+                    self.__nom= input("Que nombre tendra el video: ")
                     self.__url=int(input("Ingresa la url del video: "))
                     self.__fechap=int(input("Ingresa la fecha del video: "))
                     
