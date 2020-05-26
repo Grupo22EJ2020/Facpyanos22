@@ -75,6 +75,6 @@ class Aplicacion:
             def guardado():
                 archivo=open("./archivos/Empleado.txt","w")
                 for posicion in empleados:
-                    archivo.write(str(f" idEmpleado: {posicion.idEmpleado}, nombre: {posicion.nombre}, direccion: {posicion.direccion} "))
+                    archivo.write(str(f" idEmpleado: {posicion.idEmpleado}, nombre: {posicion.nombre}, direccion: {posicion.direccion} ""\n"))
                 archivo.close()
             guardado()

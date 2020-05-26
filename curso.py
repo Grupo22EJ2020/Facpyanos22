@@ -106,7 +106,7 @@ class Cursoo:
                 def informacion():
                     archivo=open("./archivos/curso.txt","w")
                     for i6 in lista:
-                        archivo.write(str(f" IdCurso: {i6.idCurso}, descripcion: {i6.descripcion}, IdEmpleado: {i6.idEmpleado} |-| "))
+                        archivo.write(str(f" IdCurso: {i6.idCurso}, descripcion: {i6.descripcion}, IdEmpleado: {i6.idEmpleado}""\n"))
                     archivo.close()
                 informacion()
             except ValueError:

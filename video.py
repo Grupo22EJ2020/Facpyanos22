@@ -114,7 +114,7 @@ class Video:
                 def informacion():
                     archivo=open("./archivos/VIDEO.txt","w")
                     for i6 in lista:
-                        archivo.write(str(f" idVideo: {i6.idV}, nombre: {i6.nom}, url: {i6.url}, fecha: {i6.fechap} |-| "))
+                        archivo.write(str(f" idVideo: {i6.idV}, nombre: {i6.nom}, url: {i6.url}, fecha: {i6.fechap}""\n"))
                     archivo.close()
                 informacion()
                 limpiar_pantalla()
