@@ -4,7 +4,7 @@ def limpiar_pantalla():
         system('cls')
     else:
         system('clear')
-#from curso import Curso
+from curso import Cursoo
 #from empleado import Empleado
 #from video import Video
 #from tema import Tema
@@ -22,13 +22,11 @@ while True:
     if opcion<1:
             input("Error, introduzca un numero valido, enter para continuar... ")
     elif opcion==1:
-        pass
-#            valor=Curso(None,None,None)
-#            valor.Minimenu()
+        valor=Cursoo(0,None,None)
+        valor.Minimenu()
     elif opcion==2:
-        pass
-#           valor=Empleado(None,None,None)
-#           valor.Minimenu()
+        valor=Cursoo(0,None,None)
+        valor.Minimenu()
     elif opcion==3:
         pass
         #valor=Video(0,0,0,0)
