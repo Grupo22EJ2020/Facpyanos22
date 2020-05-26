@@ -1,0 +1,1 @@
+ IdCurso: 1, descripcion: 1, IdEmpleado: 2 |-| 
