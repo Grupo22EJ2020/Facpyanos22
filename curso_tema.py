@@ -37,7 +37,16 @@ class Curso_Tema:
                     input("Error, introduzca numero correcto, enter para continuar...")
                 elif opcion==1:
                     limpiar_pantalla()
+                    curso=open("./archivos/curso.txt","r")
+                    print(curso.read())
+                    input("Base de Datos Actual,Enter para continuar...")
+                    curso.close()
                     self.__ic=int(input("Dame el curso: "))
+                    #tema=open("./archivos/tema.txt","r")
+                    #print(tema.read())
+                    #input("Base de Datos Actual,Enter para continuar...")
+                    #limpiar_pantalla()
+                    #tema.close()
                     self.__it=int(input("Dame el tema: "))
                     self.__ict=self.__ict+1
                     valores=Curso_Tema(self.__ict,self.__ic,self.__it)
@@ -106,7 +115,7 @@ class Curso_Tema:
                 def informacion():
                     archivo=open("./archivos/Curso_Tema.txt","w")
                     for i6 in lista:
-                        archivo.write(str(f" IdCursoTema: {i6.ict}, IdCurso: {i6.ic}, IdTema: {i6.it} |-| "))
+                        archivo.write(str(f" IdCursoTema: {i6.ict}, IdCurso: {i6.ic}, IdTema: {i6.it}""\n"))
                     archivo.close()
                 informacion()
             except ValueError:
