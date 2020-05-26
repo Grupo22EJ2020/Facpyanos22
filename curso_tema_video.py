@@ -37,8 +37,17 @@ class Curso_Tema_Video:
                     input("Error, introduzca numero correcto, enter para continuar...")
                 elif opcion==1:
                     limpiar_pantalla()
-                    self.__ict=int(input("Dame el curso: "))
-                    self.__iv=int(input("Dame el tema: "))
+                    idctema=open("./archivos/Curso_Tema.txt","r")
+                    print(idctema.read())
+                    input("Base de datos Actual, enter para continuar...")
+                    idctema.close()
+                    self.__ict=int(input("Dame el idCursoTema: "))
+                    limpiar_pantalla()
+                    videoid=open("./archivos/VIDEO.txt","r")
+                    print(videoid.read())
+                    input("Base de datos Actual, enter para continuar...")
+                    videoid.close()
+                    self.__iv=int(input("Dame el idvideo: "))
                     self.__icttv=self.__icttv+1
                     valores=Curso_Tema_Video(self.__icttv,self.__ict,self.__iv)
                     lista.append(valores)
@@ -106,7 +115,7 @@ class Curso_Tema_Video:
                 def informacion():
                     archivo=open("./archivos/Curso_Tema_Video.txt","w")
                     for i6 in lista:
-                        archivo.write(str(f" IdCursoTV: {i6.icttv}, IdCT: {i6.ict}, IdVideo: {i6.iv} |-| "))
+                        archivo.write(str(f" IdCursoTV: {i6.icttv}, IdCT: {i6.ict}, IdVideo: {i6.iv}""\n"))
                     archivo.close()
                 informacion()
                 limpiar_pantalla()
