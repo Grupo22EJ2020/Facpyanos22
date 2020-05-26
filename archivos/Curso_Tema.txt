@@ -1,0 +1,1 @@
+ IdCursoTema: 1, IdCurso: 1, IdTema: 2

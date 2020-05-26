@@ -1,0 +1,1 @@
+ IdCursoTV: 1, IdCT: 1, IdVideo: 1
