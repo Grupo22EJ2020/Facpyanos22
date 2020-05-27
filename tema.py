@@ -15,8 +15,7 @@ class Tema:
     def nombre(self,nuevonombre):
         self.__nombre= nuevonombre
     def __eq__(self,otro):
-        return
-        self.__idTema==otro.__idTema
+        return self.__idTema==otro.__idTema
 
     def minimenu (self):
 
@@ -39,7 +38,7 @@ class Tema:
                     clave=int(input("Clave:"))
                     for remover in tema:
                         if remover.idTema == clave:
-                            tema.remove(Tema(clave,None,None))
+                            tema.remove(Tema(clave,None))
                             input("El registro fue borrado")
 
             elif accion ==3:
