@@ -21,13 +21,13 @@ class Tema:
 
         tema = []
         while True:
-            print ("\n1. Agregar empleado\n2.Borrar empleado\n3.Modificar empleado\n4. Ver detalles de empleado\n5.Salir")
+            print ("\n1. Agregar tema\n2.Borrar tema\n3.Modificar tema\n4. Ver detalles de tema\n5.Salir")
 
             accion= int(input("¿Cual es la accion que desea ejecutar?:"))
             if accion ==1:
 
                 self.__idTema= self.__idTema+1
-                self.__nombre=input("Introduzca el nombre del empleado: ")
+                self.__nombre=input("Introduzca el nombre del tema: ")
                 datos=Tema(self.__idTema,self.__nombre)
                 tema.append(datos)
 
@@ -48,7 +48,7 @@ class Tema:
                 else:
                     for remover in tema:
                         if remover.idTema==clave:
-                            remover.nombre=input("Introduzca el nombre nuevo del empleado: ")
+                            remover.nombre=input("Introduzca el nombre nuevo del tema: ")
                             input("El registro fue actualizado con exito")            
 
             elif accion ==4:
